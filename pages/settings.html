@@ -1,0 +1,16 @@
+<section class="card">
+    <h2>Налаштування</h2>
+    <div style="padding: 20px 0;">
+        <label>
+            <input type="checkbox" id="theme-toggle"> 
+            Увімкнути темну тему
+        </label>
+    </div>
+</section>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
